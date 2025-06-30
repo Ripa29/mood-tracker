@@ -60,3 +60,28 @@ A Laravel-based web application that allows users to log their mood daily, view 
    
    git clone https://github.com/Ripa29/mood-tracker.git
    cd mood-tracker
+   
+3. **Install Dependencies**
+
+composer install
+npm install && npm run dev
+
+3. **Environment Configuration**
+
+cp .env.example .env
+php artisan key:generate
+
+4. **Configure Database**
+   Update .env with your DB credentials:
+DB_CONNECTION=mysql
+DB_DATABASE=mood_tracker
+DB_USERNAME=root
+DB_PASSWORD= enter your myphpadmin password
+
+5. **Run Migrations**
+   
+   php artisan migrate
+
+6. **Serve the App**
+   
+php artisan serve
